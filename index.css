@@ -1,0 +1,546 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* -----------------------------font family----------------------- */
+
+h1,h5,h2,h5,h4{
+  /* font-family: 'Bebas Neue', cursive; */
+
+  /* font-family: 'Kanit', sans-serif; */
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  
+} 
+/* a{
+  font-family: 'Inconsolata', monospace;
+
+  font-family: 'Lobster', cursive;
+
+  font-family: 'Playfair Display', serif;
+} */
+p{
+font-family:Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+}
+.font-card{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+ 
+/* -------------------------------font color-------------------------- */
+
+.black{
+  color: black;
+}
+.grey{
+  color: rgb(110, 110, 110);
+}
+.white{
+  color: white;
+}
+.bg-grey{
+  background-color: rgb(230, 230, 230);
+}
+.border-grey{
+  border: 1px solid rgb(110, 110, 110);
+}
+.orange{
+  color: rgb(255, 102, 46);
+}
+
+/* ------------------------------navbar colors--------------------- */
+
+
+
+.first{
+  color: #59f86e ;
+}
+.second{
+  color: #ff8482;
+}
+.third{
+  color:#c8d11c ;
+}
+.forth{
+  color:#1fd2ff ;
+}
+.fifth{
+  color:rgb(226, 29, 183) ;
+}
+.sixth{
+  color: #1adbab;
+}
+.seventh{
+  color: #ff2b2b;
+}
+
+
+/* -------hover---- */
+
+.first:hover{
+  color: #9cd1a3 ;
+}
+.second:hover{
+  color: #ebaf87;
+}
+.third:hover{
+  color:#c7ce8c ;
+}
+.forth:hover{
+  color:#89bbb7 ;
+}
+.fifth:hover{
+  color:rgb(187, 137, 176) ;
+}
+.sixth:hover{
+  color: #8ab3ae;
+}
+.seventh:hover{
+  color: #8a8cd8;
+}
+
+
+
+/* ----------------------------- color animation --------------- */
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #ff7124;
+  --color-2: #23bdff;
+  --color-3: #ff908f;
+}
+
+.title-word-2 {
+  --color-1: #ffb618;
+  --color-2: #71ffee;
+  --color-3: #2bff7c;
+}
+
+.title-word-3 {
+  --color-1: #32ffe7;
+  --color-2: #ff8886;
+  --color-3: #4effea;
+}
+
+.title-word-4 {
+  --color-1: #26beff;
+  --color-2: #ff752b;
+  --color-3: #ea48ff;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.front-letter {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  
+}
+
+.title {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+}
+/* --------------------------------------------------------------- */
+
+.main-button{
+  width: 120px;
+  height: 37px;
+  margin-left: 300px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+}
+.main-button:hover{
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: #fff;
+}
+
+
+/* ------------------------color to nevbar containt----------------------- */
+
+.about-c{
+  color:#ff8a88 ;
+}
+.gallery-c{
+  color: #a5b41d;
+}
+.menu-c{
+  color: #1fd2ff;
+}
+.alert-bg{
+  background-color: #e7faff;
+  border: 1px solid #4db9d6;
+}
+
+.chefs-c{
+  color: rgb(255, 30, 206);
+}
+.booking-c{
+  color:#1de4b2 ;
+}
+.contactus{
+  color: #e22121;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* ------------------------menu----------------------------- */
+.m-display{
+  /* margin-left: 85px; */
+  /* overflow: hidden; */
+  display: flex;
+  /* justify-content: space-between; */
+  position: relative;
+
+}
+
+.m-img{
+  width: 70px;
+  height: 11vh;
+  border: 1px solid #4db9d6;
+  border-radius: 50px ;
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+img{
+    width: 100%;
+}
+.a{
+    color: #ffffff;
+}
+
+.banner {
+    background: url('img/Picsart_22-09-23_18-03-29-064.jpg');
+    background-size: cover;
+    
+}
+.main-text{
+  color: #2fa73f;
+}
+
+button{
+    align-content: center;
+}
+.bg{
+    background-color: rgb(255, 255, 255);
+}
+
+.tac{
+    text-align: center;
+}
+
+
+
+
+/* -----------------------------photos hover-------------- */
+
+.gallery {
+    padding-bottom: 0;
+  }
+  
+  .gallery .gallery-item {
+    overflow: hidden;
+    margin: 2px;
+  }
+  
+  .gallery .gallery-item img,h5,p{
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .gallery .gallery-item:hover img,h5,p{
+    transform: scale(1.1);
+  }
+
+/* ------------------------------------------------ */
+
+i{
+  font-size: 25px;
+}
+.d-in{
+    display: inline;
+}
+  
+.shadow{
+    box-shadow: 3px 3px 5px  black;
+}
+  
+.b-bottom{
+    /* border-left: 5px solid #87c5d6; */
+    width: 65px;
+    background-color: #d8f5fd;
+
+}
+
+input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #13a17d ;
+  color: #13a17d;
+}
+/* input:hover{
+  color: rgb(225, 1, 255);
+} */
+
+textarea{
+  width: 100%;
+  border: 1px solid #13a17d ;
+  color: #13a17d;
+}
+.booking-b{
+  color: #fff;
+  border: 1px solid #13a17d ;
+  background-color: #13a17d ;
+  height: 50px;
+  
+}
+
+button{
+  margin-left: 300px;
+  /* margin-right: 300px; */
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  justify-content: center;
+}
+
+/* ---------------------------contact us----------------------------- */
+iframe{
+  width: 100%;
+  height: 300px;
+}
+.iframe-border{
+  border: 4px solid #ff2b2b;
+}
+.contactus-input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ff2b2b ;
+  color:#ff2b2b;
+}
+.contact-c{
+  color:#ff2b2b ;
+}
+
+.contact-textarea{
+  width: 100%;
+  height: 140px;
+  border: 1px solid #ff2b2b ;
+  color: #ff2b2b;
+}
+.contact-i{
+  font-size: 30px;
+}
+.contact-i:hover{
+  color: #ff2b2b;
+}
+.f1{
+  color: #2c62d4;
+}
+.f2{
+  color: #5fcf6e;
+}
+.f3{
+  color: rgb(217, 64, 255);
+}
+.f4{
+  color: rgb(47, 179, 255);
+}
+.f5{
+  color: rgb(255, 37, 37);
+}
+
+.contact-b{
+  color: #fff;
+  border: 1px solid #ff2b2b;
+  background-color: #ff2b2b;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+}
+
+/* --------------------------footer--------------------------------- */
+footer{
+  text-align: center;
+  height: 200px;
+  background-color: rgb(53, 53, 53);
+  justify-content: center;
+  padding: 50px 0;
+}
+.border-down{
+  border-bottom: 1px solid #4d89f8;
+}
+
+.f{
+  color: #5fcf6e ;
+}
+.s{
+  color: #e96b1e;
+}
+.t{
+  color:#bcce1e ;
+}
+.fo{
+  color:#179abb ;
+}
+.fi{
+  color:rgb(255, 30, 206) ;
+}
+.si{
+  color: #13a17d;
+}
+.se{
+  color: #4d89f8;
+}
+.e{
+  color: rgb(255, 148, 166);
+}
+.te{
+  color: rgb(166, 202, 67);
+}
+.r{
+  color: red;
+}
+
+.border-f1{
+  border: 2px solid rgb(255, 245, 110) ;
+}
+.border-f2{
+  border: 2px solid rgb(201, 255, 131) ;
+}
+.border-f3{
+  border: 2px solid #80ffd4 ;
+}
+.border-f4{
+  border: 2px solid #7085ff ;
+}
+.border-f5{
+  border-top: 2px solid #c37aff ;
+}
+.border-f6{
+  border: 2px solid #ff6cda ;
+}
+.border-f7{
+  border: 2px solid #ff6d6d ;
+}
+
+
+/* -----------home inputs ------------------------------ */
+
+.h-input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #000000 ;
+  color: #000000;
+  background-color: rgb(240, 240, 240);
+}
+/* input:hover{
+  color: rgb(225, 1, 255);
+} */
+
+.h-textarea{
+  width: 100%;
+  border: 1px solid #000000 ;
+  color: #000000;
+  background-color: rgb(240, 240, 240)
+}
+.h-button{
+  border: 1px solid rgb(255, 102, 46);
+  color: #fff;
+  background-color: rgb(255, 102, 46);
+  height: 40px;
+}
+
+/* ------------------------chefs ------------------------------------ */
+
+.chef-icon{
+  font-size: 20px;
+
+}
+
+
+/* ------------------contactus input-------------------- */
+
+.co-input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #000000 ;
+  color: #000000;
+  background-color: rgb(240, 240, 240)
+}
+/* input:hover{
+  color: rgb(225, 1, 255);
+} */
+
+.co-textarea{
+  width: 100%;
+  border: 1px solid #000000 ;
+  color: #000000;
+  height: 165px;
+  background-color: rgb(240, 240, 240)
+}
+.co-button{
+  border: 1px solid rgb(255, 102, 46);
+  color: #fff;
+  background-color: rgb(255, 102, 46);
+  height: 40px;
+  width: 200px;
+}
+
+.i1:hover{
+  color: #2c62d4;
+}
+.i2:hover{
+  color: #5fcf6e;
+}
+.i3:hover{
+  color: rgb(217, 64, 255);
+}
+.i4:hover{
+  color: rgb(47, 179, 255);
+}
+.i5:hover{
+  color: rgb(255, 37, 37);
+} 
+
+
+/* ------------------footer home---------------- */
+
+.h-footer{
+  background-color: #000000;
+  height: 250px;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.footer-black:hover{
+  color: rgb(73, 73, 73);
+}
+
+
+
+

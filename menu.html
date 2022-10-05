@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .main-button {
+      width: 120px;
+      height: 37px;
+      margin-left: 1px;
+      color: #2ed5ff;
+      border: 1px solid #1fd2ff;
+      background: transparent;
+    }
+    .more-button {
+      width: 80px;
+      height: 35px;
+      margin-left: 430px;
+      color: #2ed5ff;
+      border: 1px solid #1fd2ff;
+      background: transparent;
+    }
+
+    .main-button:hover {
+      background-color: #24d3ff;
+      border: 1px solid #1bd1ff;
+      color: #ffffff;
+    }
+    .more-button:hover {
+      background-color: #24d3ff;
+      border: 1px solid #1bd1ff;
+      color: #ffffff;
+    }
+
+    .banner {
+      background: url('img/first_image/Picsart_22-09-23_09-53-44-203.jpg');
+      background-size: cover;
+    }
+
+    h6 {
+      font-size: 20px;
+      font-family: serif;
+    }
+
+    .font-p {
+      font-size: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="home"></div>
+  <nav class="navbar navbar-expand-lg fixed-top" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="about-c">H</span>
+        <span class="menu-c">O</span>
+        <span class="chefs-c">T</span>
+        <span class="gallery-c">F</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav menu-navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link first" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link second" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link third" href="gallery.html">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link forth" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fifth" href="chefs.html">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sixth" href="booknig.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seventh" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+
+      <div class="front-letter">
+        <h2 class="title">
+          <span class="title-word title-word-1">HOUSE</span>
+          <span class="title-word title-word-2">OF</span>
+          <span class="title-word title-word-3">THE</span>
+          <span class="title-word title-word-4">FOODIES</span>
+        </h2>
+      </div>
+      <br>
+      <h1 class="menu-c bg-main-text">Menu</h1>
+      <br>
+      <a class="nav-link" href="#booking">
+        <div class="tac d-grid gap-2">
+          <a href="booknig.html"><button type="button" class="main-button">Book a Table</button></a>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br>
+
+
+  <div id="menu" class="menu-c">
+    <h1 class="tac">Menu</h1>
+    <p class="tac">Our Restaurnat Special</p>
+  </div>
+
+  <div class="alert alert-dismissible container menu-c alert-bg" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+      class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+      <path
+        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </svg>
+    <strong>Every Webnesday & Thursday!</strong>&nbsp;&nbsp;&nbsp;Flat 30% Off On All Food.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <br>
+
+
+
+  <div class="container menu-c">
+    <h2 class="tac">Starter</h2>
+    <br><br>
+    <div class="row">
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Microwave Paneer Tikkas.webp" alt="">
+          <h6>&nbsp;&nbsp;Microwave Paneer Tikkas---------- &#8377;230 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Aloo and Dal ki Tikki.jpg" alt="">
+          <h6>&nbsp;&nbsp;Aloo and Dal ki Tikki --------------- &#8377;150 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+
+      </div>
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Cheese Balls.webp" alt="">
+          <h6>&nbsp;&nbsp;Cheese Balls ------------------------ &#8377;180 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Chicken Satay.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken Satay ---------------------- &#8377;210 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <button type="button" class="more-button tac">More</button>
+  </div>
+  <hr class="container menu-c">
+  <br>
+
+
+  <div class="container menu-c">
+    <h2 class="tac">Juice</h2>
+    <br><br>
+    <div class="row">
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Pineapple Juice.webp" alt="">
+          <h6>&nbsp;&nbsp;Pineapple Juice ------------- &#8377;150 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Watermelon Juice.jpg" alt="">
+          <h6>&nbsp;&nbsp;Watermelon Juice --------------- &#8377;150 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Cherry Juice.jpg" alt="">
+          <h6>&nbsp;&nbsp;Cherry Juice ------------------------ &#8377;280 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+
+      </div>
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Mango Juice.jpg" alt="">
+          <h6>&nbsp;&nbsp;Mango Juice ------------------------ &#8377;250 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Dragon Juice.jpg" alt="">
+          <h6>&nbsp;&nbsp;Dragon Juice ---------------------- &#8377;280 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Strawberry Juice.jpg" alt="">
+          <h6>&nbsp;&nbsp;Strawberry Juice ---------------------- &#8377;220 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <button type="button" class="more-button tac">More</button>
+  </div>
+  <hr class="container menu-c">
+  <br>
+
+
+
+  <div class="container menu-c">
+    <h2 class="tac">Veg</h2>
+    <br><br>
+    <div class="row">
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Paneer Butter.jpg" alt="">
+          <h6>&nbsp;&nbsp;Paneer Butter ------------- &#8377;340 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table.jpg" alt="">
+          <h6>&nbsp;&nbsp;Daal Khichdi --------------- &#8377;220 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Paneer Chilli Dry.jpg" alt="">
+          <h6>&nbsp;&nbsp;Paneer Chilli Dry ---------------- &#8377;289 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/schezwan-noodles-szechwan-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-74647.jpg" alt="">
+          <h6>&nbsp;&nbsp;Noodles ------------------------ &#8377;480 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+
+      </div>
+
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/paneer-paratha-is-popular-north-indian-flatbread-made-with-whole-wheat-flour-dough-stuffed-with-savory-spiced-grated-paneer_466689-76498.jpg" alt="">
+          <h6>&nbsp;&nbsp;Paratha ------------------------ &#8377;180 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Shahi Paneer.jpg" alt="">
+          <h6>&nbsp;&nbsp;Shahi Paneer ---------------------- &#8377;300 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Onion Uttapam.jpg" alt="">
+          <h6>&nbsp;&nbsp;Onion Uttapam ---------------------- &#8377;320 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Veg Manchurian Gravy.jpg" alt="">
+          <h6>&nbsp;&nbsp;Veg Manchurian Gravy -------------- &#8377;239 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <button type="button" class="more-button tac">More</button>
+  </div>
+  <hr class="container menu-c">
+  <br>
+
+
+
+
+  <div class="container menu-c">
+    <h2 class="tac">Non-Veg</h2>
+    <br><br>
+    <div class="row">
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/curry-chicken-tikka-masala-with-rice_82893-13725.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chiken Tikka ------------- &#8377;380 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/top-view-delicious-fish-meal-tray_23-2148734692.jpg" alt="">
+          <h6>&nbsp;&nbsp;Fish Fry --------------- &#8377;320 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken Biryani --------------------- &#8377;450 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/chicken-skewers-with-slices-sweet-peppers-dill_2829-18809.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken skewers -------------------- &#8377;550 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+
+      </div>
+
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/delicious-chicken-table_144627-8758.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken Tandoori ------------------- &#8377;650 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Butter Chicken.jpg" alt="">
+          <h6>&nbsp;&nbsp;Butter Chicken ------------------ &#8377;360 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Chicken Handi.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken Handi ---------------------- &#8377;290 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Chicken Shahi Korma.jpg" alt="">
+          <h6>&nbsp;&nbsp;Chicken Shahi Korma ----------------- &#8377;280 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <button type="button" class="more-button tac">More</button>
+  </div>
+  <hr class="container menu-c">
+  <br>
+
+
+
+
+  <div class="container menu-c">
+    <h2 class="tac">Dessert</h2>
+    <br><br>
+    <div class="row">
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Desser Platter.jpg" alt="">
+          <h6>&nbsp;&nbsp;Desser Platter----------------- &#8377;450 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Blueberry Cheesecake.jpg" alt="">
+          <h6>&nbsp;&nbsp;Blueberry Cheesecake --------------- &#8377;329 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+
+      </div>
+      <div class="col ">
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Nutella Lava.jpg" alt="">
+          <h6>&nbsp;&nbsp;Nutella Lava ------------------------ &#8377;180 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+        <br>
+        <div class="m-display">
+          <img class="m-img" src="img/menu/Sinful Chocolate.jpg" alt="">
+          <h6>&nbsp;&nbsp;Sinful Chocolate ---------------------- &#8377;150 <p class="font-p">&nbsp;&nbsp;&nbsp;Fresh And Delicious</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <button type="button" class="more-button tac">More</button>
+  </div>
+  <br><br>
+  <br><br>
+  <br><br>
+
+
+
+
+  <div class="border-f1">
+    <div class="border-f2">
+      <div class="border-f3">
+        <div class="border-f4">
+          <div class="border-f5">
+            <div class="border-f6">
+              <div class="border-f7">
+                <footer class="">
+                  <div class="footer-text container">
+                    <!-- <h6>&copy; copyright 2022 All Copy Right Reserved <br> <br> Designed by Rajkiran Jaiswar</h6> -->
+                    <h6>
+                      <span class="e">&copy;</span>
+                      <span class="f">copyright</span>
+                      <span class="s">2022</span>
+                      <span class="t">All</span>
+                      <span class="fi">Right</span>
+                      <span class="fo">Reserved</span>
+                      <br><br>
+                      <span class="te">Designed</span>
+                      <span class="fi">with</span>
+                      <span class="r">&#10084;</span>
+                      <span class="si">by</span>
+                      <span class="e">&rArr;</span>
+                      <span class="se border-down"> Rajkiran Jaiswar </span>
+                    </h6>
+                    <div>
+                      <a href="https://github.com/Rajkiran-125" target="_blank"><i class="bi bi-github e"></i></a>&nbsp;
+                      <a href="https://www.linkedin.com/in/rajkiran-jaiswar-5a8797231/" target="_blank"><i
+                          class="bi bi-linkedin f"></i></a>&nbsp;
+                      <a href="https://www.instagram.com/therajjaiswar/" target="_blank"><i
+                          class="bi bi-instagram fo"></i></a>&nbsp;
+                      <a href="https://www.facebook.com/raj.jaiswar.1829/" target="_blank"><i
+                          class="bi bi-facebook t"></i></a>&nbsp;
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg', 'a', 'shadow');
+      }
+      else {
+        nav.classList.remove('bg', 'shadow');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
